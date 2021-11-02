@@ -1,4 +1,4 @@
-const data = {
+export const data = {
     'openrpc': '1.0.0-rc1',
     'info': {
         'version': '1.0.0',

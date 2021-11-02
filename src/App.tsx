@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { MainRPS } from './components/MainRPS';
+import { MainRPC } from './components/MainRPC';
 
 function App() {
     return (
         <div className="App">
-            <MainRPS/>
+            <MainRPC/>
         </div>
     );
 }
