@@ -2,22 +2,15 @@ import React from 'react'
 import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import { HeaderMenu } from './HeaderMenu';
 
 const { SubMenu } = Menu;
-const { Header, Content, Sider } = Layout;
+const { Content, Sider } = Layout;
 
 export const MainRPS = () => {
     return (
         <Layout>
-            <Header className="header">
-                <div className="logo"/>
-                <Menu theme="dark" mode="horizontal" defaultSelectedKeys={ [ '1' ] }>
-                    <Menu.Item key="1">main info</Menu.Item>
-                    <Menu.Item key="2">nav 1</Menu.Item>
-                    <Menu.Item key="3">nav 2</Menu.Item>
-                    <Menu.Item key="4">nav 3</Menu.Item>
-                </Menu>
-            </Header>
+            <HeaderMenu/>
             <Layout>
                 <Sider width={ 200 } className="site-layout-background">
                     <Menu
